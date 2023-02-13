@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+}
+
+.container{
+  background-color: rgb(233, 233, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container > .body-container{
+  height: max-content;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.input{
+  height: 70px;
+  width: auto;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.numbers, .operator{
+  display: flex;
+  float: left;
+}
+
+.numbers div, .operator div{
+  flex-direction: column ;
+  border: 1px solid black;
+  width: 60px;
+  height: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+.equal{
+  display: inline-block;
+  border: 1px solid black;
+  width: 60px;
+  height: 280px;
+  margin: 20px 17px;
+  text-align: center;
+}
+
+.numbers div:hover, .operator div:hover, .equal:hover{
+  background-color: rgb(194, 192, 192);
+}
