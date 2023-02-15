@@ -8,7 +8,7 @@ reset = document.querySelector('.reset');
 for(let i=0; i<number.length; i++){
   number[i].addEventListener('click', (event) => {
     input.innerHTML += event.target.textContent;
-    var firstNumber = input.innerHTML;
+    // var firstNumber = input.innerHTML;
 })
 }
 

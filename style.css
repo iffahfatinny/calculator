@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -10,42 +11,75 @@ body{
   height: 100vh;
 }
 
-.container > .body-container{
+.body-container{
   height: max-content;
-  width: 400px;
-  border: 1px solid black;
+  width: 360px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .input{
-  height: 70px;
-  width: auto;
-  border: 1px solid black;
-  margin: 20px;
+  height: 50px;
+  font-size: 40px;
+  text-align: right;
+  font-family: 'Arial Narrow', sans-serif;
+  font-weight: lighter;
+  margin: 10px;
+  padding: 5px 10px;
 }
 
-.numbers, .operator{
+.numbers{
   display: flex;
   float: left;
 }
 
-.numbers div, .operator div{
-  flex-direction: column ;
-  border: 1px solid black;
-  width: 60px;
-  height: 40px;
-  margin: 20px;
+.operator{
+  display: flex;
+}
+
+.operator div{
+  background-color: #FF8C00;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  width: 30px;
+  margin: 10px;
   text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.numbers div{
+  background-color: #474343;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  width: 30px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .equal{
   display: inline-block;
-  border: 1px solid black;
-  width: 60px;
-  height: 280px;
-  margin: 20px 17px;
+  /* border: 1px solid black; */
+  width: 65px;
+  padding: 139px 2px;
+  margin: 10px;
   text-align: center;
+  cursor: pointer;
+  background-color: #FF8C00;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
 }
 
-.numbers div:hover, .operator div:hover, .equal:hover{
-  background-color: rgb(194, 192, 192);
+.numbers div:hover{
+  background-color: rgb(149, 147, 147);
+}
+
+.operator div:hover,.equal:hover{
+  background-color: #fbb560;
 }
